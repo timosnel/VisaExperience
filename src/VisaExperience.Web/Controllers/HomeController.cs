@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace HelloMvc
+namespace VisaExperience.Web
 {
     public class HomeController : Controller
     {

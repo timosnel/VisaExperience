@@ -6,8 +6,8 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>e5bde977-3f5c-4310-8a23-b5694a869c88</ProjectGuid>
-    <RootNamespace>VisaExperience.Web</RootNamespace>
+    <ProjectGuid>15bfb0a0-f931-4878-819d-ee32d28307e0</ProjectGuid>
+    <RootNamespace>VisaExperience.DataAccess</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>
   </PropertyGroup>
