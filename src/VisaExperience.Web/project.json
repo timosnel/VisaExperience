@@ -19,8 +19,9 @@
     "Microsoft.Extensions.Logging.Console": "1.0.0-*",
     "Microsoft.NETCore.App": {
       "type": "platform",
-      "version": "1.0.0-*"
-    }
+      "version": "1.0.0-rc2-3002673"
+    },
+    "VisaExperience.DataAccess": "1.0.0-*"
   },
   "tools": {
     "Microsoft.DotNet.Watcher.Tools": {
