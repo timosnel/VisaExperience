@@ -6,14 +6,17 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     cssmin = require('gulp-cssmin'),
     uglify = require('gulp-uglify'),
-    jshint = require('gulp-jshint');
+    jshint = require('gulp-jshint'),
+    sass = require('gulp-sass'),
+    sasslint = require('gulp-sass-lint');
 
 var webroot = './wwwroot/';
-var gulpFile = './gulpfile.js';
+var gulpfile = './gulpfile.js';
 
 var paths = {
     js: webroot + 'js/**/*.js',
     minJs: webroot + 'js/**/*.min.js',
+    sass: webroot + 'css/**/*.scss',
     css: webroot + 'css/**/*.css',
     minCss: webroot + 'css/**/*.min.css',
     concatJsDest: webroot + 'js/site.min.js',
@@ -30,11 +33,26 @@ gulp.task('clean:css', function (cb) {
 
 gulp.task('clean', ['clean:js', 'clean:css']);
 
-gulp.task('lint', function() {
-    return gulp.src([gulpFile, paths.js])
+gulp.task('lint:js', function() {
+    return gulp.src([gulpfile, paths.js])
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(jshint.reporter('fail'));
+});
+
+gulp.task('lint:css', function() {
+    gulp.src(paths.sass)
+        .pipe(sasslint())
+        .pipe(sasslint.format())
+        .pipe(sasslint.failOnError());
+});
+
+gulp.task('lint', ['lint:js', 'lint:css']);
+
+gulp.task('sass', function() {
+    return gulp.src(paths.sass)
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest(paths.css))
 });
 
 gulp.task('min:js', function () {
