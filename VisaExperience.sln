@@ -1,11 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VisaExperience.Web", "src\VisaExperience.Web\VisaExperience.Web.xproj", "{E5BDE977-3F5C-4310-8A23-B5694A869C88}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9AA01A61-03B3-4C86-B76A-32A78C36A992}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VisaExperience.DataAccess", "src\VisaExperience.Web\VisaExperience.DataAccess.xproj", "{15BFB0A0-F931-4878-819D-EE32D28307E0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{418D6F75-641F-4428-ABE6-693E9E2845C5}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Dockerfile = Dockerfile
+		global.json = global.json
+		NuGet.Config = NuGet.Config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VisaExperience.DataAccess", "src\VisaExperience.DataAccess\VisaExperience.DataAccess.xproj", "{2DC38162-3147-44E2-8F3A-21E3DE64FC56}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VisaExperience.Web", "src\VisaExperience.Web\VisaExperience.Web.xproj", "{93A9A47D-92ED-4B66-A7AC-B0CADCF8065D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,24 +24,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{54AB9124-0B67-46C7-BF17-61EC50C94233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54AB9124-0B67-46C7-BF17-61EC50C94233}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54AB9124-0B67-46C7-BF17-61EC50C94233}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54AB9124-0B67-46C7-BF17-61EC50C94233}.Release|Any CPU.Build.0 = Release|Any CPU
-		{80D61081-6CF1-43CA-92F4-C5BF49F393B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80D61081-6CF1-43CA-92F4-C5BF49F393B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80D61081-6CF1-43CA-92F4-C5BF49F393B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80D61081-6CF1-43CA-92F4-C5BF49F393B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15BFB0A0-F931-4878-819D-EE32D28307E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15BFB0A0-F931-4878-819D-EE32D28307E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15BFB0A0-F931-4878-819D-EE32D28307E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15BFB0A0-F931-4878-819D-EE32D28307E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E5BDE977-3F5C-4310-8A23-B5694A869C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5BDE977-3F5C-4310-8A23-B5694A869C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5BDE977-3F5C-4310-8A23-B5694A869C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5BDE977-3F5C-4310-8A23-B5694A869C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC38162-3147-44E2-8F3A-21E3DE64FC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC38162-3147-44E2-8F3A-21E3DE64FC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC38162-3147-44E2-8F3A-21E3DE64FC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC38162-3147-44E2-8F3A-21E3DE64FC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A9A47D-92ED-4B66-A7AC-B0CADCF8065D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A9A47D-92ED-4B66-A7AC-B0CADCF8065D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A9A47D-92ED-4B66-A7AC-B0CADCF8065D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A9A47D-92ED-4B66-A7AC-B0CADCF8065D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2DC38162-3147-44E2-8F3A-21E3DE64FC56} = {9AA01A61-03B3-4C86-B76A-32A78C36A992}
+		{93A9A47D-92ED-4B66-A7AC-B0CADCF8065D} = {9AA01A61-03B3-4C86-B76A-32A78C36A992}
 	EndGlobalSection
 EndGlobal

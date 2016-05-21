@@ -6,5 +6,4 @@ This repository contains the source for the VisaExperience project.
 
 1. dotnet restore
 2. cd .\src\VisaExperience.Web\
-3. dotnet build
-4. dotnet run
+3. dotnet run

@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using VisaExperience.DataAccess.Repositories.Interfaces;
 using VisaExperience.Web.ViewModels;
 
-namespace VisaExperience.Web
+namespace VisaExperience.Web.Controllers
 {
     [Route("[controller]")]
     public class CountryController : Controller
