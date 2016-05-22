@@ -52,7 +52,7 @@ gulp.task('lint', ['lint:js', 'lint:css']);
 gulp.task('sass', function() {
     return gulp.src(paths.sass)
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest(paths.css))
+        .pipe(gulp.dest(paths.css));
 });
 
 gulp.task('min:js', function () {

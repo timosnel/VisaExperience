@@ -1,31 +1,69 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/* Skeleton overrides */
+
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary,input[type="button"].button-primary {
+    background-color: #CD5360;
+    border-color: #CD5360; 
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover, .button.button-primary:focus, button.button-primary:focus, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
+    background-color: #1EAEDB;
+    border-color: #1EAEDB; 
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
+/* End skeleton overrides */
+
+body {
+    color: #4d4e53;
+    font-family: 'Open Sans',Arial,sans-serif;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+.section-header {
+    background-color: #286DA8;
+    color: white;
+    height: 4em;
+    text-align: center;
+    margin-bottom: 1em;
 }
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-  /* Hide captions */
-  .carousel-caption {
-    display: none
-  }
+.section-header h1 {
+    margin: 0;
+    font-size: 3.6rem; 
+    line-height: 1.5em; 
+    letter-spacing: -.1rem;
+}
+.section-header a {
+    color: white;
+    text-decoration: none;
+}
+
+.section-nav a {
+    line-height: 4em;
+}
+
+.section-footer {
+    background-color: #286DA8;
+    color: white;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+}
+
+.section-sidebar {
+    background-color: #B37D4E;
+    color: white;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+.section-sidebar h5 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.section-sidebar p {
+    margin: 0 1rem 0 1rem;
+}
+
+.section-sidebar ul {
+    margin: 0 1rem 0 1rem;
+}
+
+.section-finder {
 }

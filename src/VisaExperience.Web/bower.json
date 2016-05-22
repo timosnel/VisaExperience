@@ -2,6 +2,7 @@
   "name": "asp.net",
   "private": true,
   "dependencies": {
-    "bootstrap": "3.3.6"
+	"reset-css": "2.0.2011012603",
+    "skeleton": "2.0.4"
   }
 }
