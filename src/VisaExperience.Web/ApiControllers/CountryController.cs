@@ -1,12 +1,10 @@
-using System;
+﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using VisaExperience.DataAccess.Repositories.Interfaces;
-using VisaExperience.Web.ViewModels;
 
-namespace VisaExperience.Web.Controllers
+namespace VisaExperience.Web.ApiControllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class CountryController : Controller
     {
         private IGeoRepository _geoRepository;
@@ -18,12 +16,16 @@ namespace VisaExperience.Web.Controllers
             _geoRepository = geoRepository;
         }
 
-        [Route("{id}")]
-        public IActionResult Index(string id)
+        [HttpGet("{id}")]
+        public IActionResult GetCountry(string id)
         {
-            var viewModel = new CountryViewModel();
+            if (string.IsNullOrWhiteSpace(id))
+                return NotFound();
 
-            return View(viewModel);
+            string country = "example";
+            //var country = _geoRepository.GetCountry(id);
+
+            return new ObjectResult(country);
         }
     }
 }
