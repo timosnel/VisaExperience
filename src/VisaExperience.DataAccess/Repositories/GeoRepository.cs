@@ -4,6 +4,5 @@ namespace VisaExperience.DataAccess.Repositories
 {
     public class GeoRepository : IGeoRepository
     {
-
     }
 }

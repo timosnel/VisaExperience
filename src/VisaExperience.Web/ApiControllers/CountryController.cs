@@ -23,8 +23,7 @@ namespace VisaExperience.Web.ApiControllers
                 return NotFound();
 
             string country = "example";
-            //var country = _geoRepository.GetCountry(id);
-
+            
             return new ObjectResult(country);
         }
     }
